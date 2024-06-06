@@ -34,8 +34,8 @@ package = "netlify-plugin-11ty"
     styleSrc = "'self'"
     scriptSrc = "'self' www.google-analytics.com www.googletagmanager.com"
     fontSrc = "'self' data: fonts.gstatic.com"
-    imgSrc = "'self' www.google-analytics.com assets.tina.io"
-    connectSrc = "www.google-analytics.com identity.tinajs.io content.tinajs.io assets.tinajs.io"
+    imgSrc = "'self' www.google-analytics.com"
+    connectSrc = "www.google-analytics.com"
     frameAncestors = "'none'"
 
 [[plugins]]
