@@ -2,18 +2,18 @@
 # Site metadata
 metadata:
   # site_url should match your full production URL
-  site_url: 'https://halide.netlify.app'
-  site_title: Halide
+  site_url: 'https://www.insidethekpprabbithole.xyz/'
+  site_title: Inside the KPP Rabbit Hole
   # site subtitles are optional
-  site_subtitle_1: Image Portfolio
-  site_subtitle_2: Sometown, CA
+  site_subtitle_1: Kinnera/Kaveri
+  site_subtitle_2: In two places at once - Berlin/Singapore/Hyderabad
   # Home page description, accepts markdown
   site_description: >
-    Halide is a customizable Jamstack portfolio website theme designed for photographers and still image creators. Read the docs at [github.com/danurbanowicz/halide](https://github.com/danurbanowicz/halide)
+    We sometimes make things.
   # footer contact email
-  site_email: dan.urbanowicz@gmail.com
+  site_email: hello@kinnerapriyap.com
   # footer social link (the social title is defined in the i18n section)
-  site_social_url: 'https://github.com/danurbanowicz/halide'
+  site_social_url: 'https://github.com/kinnerapriyap/insidethekpprabbithole.xyz'
   # SVG image used for sharing/bookmark icons
   site_icon_svg: /assets/uploads/favicon.svg
   # optional PNG image used for sharing/bookmark icons
@@ -23,10 +23,10 @@ metadata:
   # home page SEO fields
   seo:
     # <title> tag
-    site_title: Halide - Jamstack portfolio theme
+    site_title: Inside the KPP Rabbit Hole
     # meta description
     site_description: >-
-      A customizable, minimalist portfolio website designed for photographers and still image creators.
+      Kinnera and Kaveri sometimes make things.
     # Adds a noindex <meta> tag on all site pages, be careful y'all!
     # Instead you can block indexing per-project with no_index: true
     no_index: false
