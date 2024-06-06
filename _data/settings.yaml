@@ -1,0 +1,98 @@
+# Halide Settings
+# Site metadata
+metadata:
+  # site_url should match your full production URL
+  site_url: 'https://halide.netlify.app'
+  site_title: Halide
+  # site subtitles are optional
+  site_subtitle_1: Image Portfolio
+  site_subtitle_2: Sometown, CA
+  # Home page description, accepts markdown
+  site_description: >
+    Halide is a customizable Jamstack portfolio website theme designed for photographers and still image creators. Read the docs at [github.com/danurbanowicz/halide](https://github.com/danurbanowicz/halide)
+  # footer contact email
+  site_email: dan.urbanowicz@gmail.com
+  # footer social link (the social title is defined in the i18n section)
+  site_social_url: 'https://github.com/danurbanowicz/halide'
+  # SVG image used for sharing/bookmark icons
+  site_icon_svg: /assets/uploads/favicon.svg
+  # optional PNG image used for sharing/bookmark icons
+  site_icon_png: ''
+  # add a GA4 ID to enable Google Analytics e.g. G-123456789
+  site_ga4_id: ''
+  # home page SEO fields
+  seo:
+    # <title> tag
+    site_title: Halide - Jamstack portfolio theme
+    # meta description
+    site_description: >-
+      A customizable, minimalist portfolio website designed for photographers and still image creators.
+    # Adds a noindex <meta> tag on all site pages, be careful y'all!
+    # Instead you can block indexing per-project with no_index: true
+    no_index: false
+# theme customization
+theme:
+  theme_layout:
+    # scale to increase/decrease padding, margins, gaps etc
+    space_scale: 100
+  # theme colors can be hex, rgb, rgba or any valid CSS color value
+  theme_colors:
+    # default colors aka "light mode"
+    background: '#ffffff'
+    text: '#101010'
+    link: '#542BFF'
+    # dark mode colors
+    background_dark: '#101010'
+    text_dark: '#E1E1E1'
+    link_dark: '#FFFFFF'
+  theme_typography:
+    # font can be any variable Google Font name. Enter 'system' to use a system font stack
+    font: Overpass Mono
+    # can be any valid variable font weight value e.g. 415
+    font_weight: 400
+    # adjust font_scale up/down to increase/decrease font size
+    font_scale: 100
+    # adjust line_height_scale up/down to increase/decrease line height
+    line_height_scale: 100
+    # underline links
+    link_underline: true
+  theme_features:
+    # enables the dark mode toggle and detects the user's dark mode preference
+    enable_dark_mode: true
+    # max number of home page image grid items
+    item_output_limit: 48
+    # animations transition in milliseconds
+    transition_duration: 300
+    show_project_year: true
+    show_project_grid_titles: true
+# Image settings (lovell/sharp). JPEG format can't be disabled via the CMS.
+images:
+  avif:
+    enabled: true
+    quality: 75
+  webp:
+    enabled: true
+    quality: 75
+  jpeg:
+    # at least JPEG should be enabled
+    enabled: true
+    # Compression quality from 1-100
+    quality: 75
+# Locale and translations
+i18n:
+  # any valid ISO language code e.g. en or en-US
+  site_language: en
+  # single-language translations can be defined here
+  site_social_title: GitHub
+# Internal config, hidden from Tina CMS
+config:
+  # define responsive image widths for project thumbnails and large images
+  # modifying these will require a corresponding change to viewport sizes in responsive image markup
+  image_grid_width_sm: 640
+  image_grid_width_md: 1080
+  image_grid_width_lg: 1800
+  image_width_sm: 1080
+  image_width_md: 1800
+  image_width_lg: 2400
+  # define the optional system font stack
+  font_stack_system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"

@@ -1,0 +1,86 @@
+---
+layout: layouts/base.njk
+permalink: "project/{{ title | slug }}/index.html"
+section: project
+---
+<article>
+
+  <header class="pb--4">
+
+    <div class="grid grid--intro">
+
+      <h1 class="grid__item--span-4 mw--readable">{{ title }}</h1>
+      <div class="grid__item--span-4 mw--readable markdown">{{ description | renderUsingMarkdown | safe }}</div>
+        
+      {% if year and settings.theme.theme_features.show_project_year %}
+        <p class="grid__item--span-4 mw--readable mb--0">
+          {{ year }}
+        </p>
+      {% endif %}
+
+    </div>
+
+  </header>
+
+  <section class="grid grid--project pb--3">
+
+    {% if images %}
+
+      {# Images are output in the order they appear in project frontmatter #}
+      {# and can be ordered in Tina CMS using drag and drop #}
+      {% for image in images %}
+
+        {# Make an array of the enabled image formats from settings.yaml #}
+        {% set outputFormats = [] %}
+        {% for format, i in settings.images %}
+          {% if i.enabled === true %}
+            {{ '' if outputFormats.push(format) }}
+          {% endif %}
+        {% endfor %}
+
+        {# Create an object for our main project image parameters which we can then
+        destructure inside our shortcode function. See eleventy.js for what's going on #}
+        {% set params = 
+          {
+            "src": image.src,
+            "alt": image.caption or title,
+            "classes": "grid__item grid__item--breakout",
+            "loadingType": "eager" if loop.first else "lazy",
+            "viewportSizes": "(min-width: 1140px) 70vw, (min-width: 540px) 90vw, 100vw",
+            "outputWidths": [ 
+              settings.config.image_width_sm,
+              settings.config.image_width_md,
+              settings.config.image_width_lg
+            ],
+            "outputFormats": outputFormats,
+            "outputQualityJpeg": settings.images.jpeg.quality,
+            "outputQualityWebp": settings.images.webp.quality,
+            "outputQualityAvif": settings.images.avif.quality
+          }
+        %}
+
+        {# The image shortcode #}
+        {% generateImage params %}
+
+      {% endfor %}
+
+    {% endif %}
+
+  </section>
+
+  <section>
+    <div class="grid grid--description pb--6">
+      <div class="grid__item--span-4 mw--readable">
+        {{ layoutContent | safe }}
+      </div>
+    </div>
+  </section>
+  
+</article>
+
+{# Output a list of random projects, excluding the current project, default limit of 48 #}
+{% set projectList = collections.projects | randomLimit((settings.theme.theme_features.item_output_limit or 48), page.url) %}
+{% include "components/projectList.njk" %}
+
+{# Appended to <head> during build #}
+{% include "components/opengraph.njk" %}
