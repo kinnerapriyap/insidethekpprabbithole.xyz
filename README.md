@@ -3,3 +3,5 @@
 # Inside the KPP Rabbit Hole
 
 (Kinnera && Kaveri) Priya Putti
+
+Local installation: `npx @11ty/eleventy --serve`
