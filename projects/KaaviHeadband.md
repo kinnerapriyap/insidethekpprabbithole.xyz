@@ -3,7 +3,7 @@ draft: false
 title: Kaavi Headband
 description: |
   For the birthday girl.
-maker: Kinnera Priya Putti
+maker: Kinnera
 year: 2022
 images:
   - src: /assets/uploads/KaaviHeadband.jpg

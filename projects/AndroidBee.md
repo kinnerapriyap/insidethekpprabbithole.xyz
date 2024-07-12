@@ -3,7 +3,7 @@ draft: false
 title: Android Bees
 description: |
   Because ioki's engineering team has a bee mascot and the Android team needed to represent!
-maker: Kinnera Priya Putti
+maker: Kinnera
 year: 2024
 images:
   - src: /assets/uploads/AndroidBeeKin.jpg
