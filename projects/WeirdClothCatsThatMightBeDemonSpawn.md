@@ -10,5 +10,5 @@ images:
     caption: Weird Cloth Cats That Might Be Demon Spawn
   - src: /assets/uploads/WeirdClothCats2.jpeg
     caption: Weird Cloth Cats on Kinakka
-date: 2024-06-01
+date: 2024-08-23
 ---

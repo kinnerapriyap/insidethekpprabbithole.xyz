@@ -2,7 +2,7 @@
 draft: false
 title: The Tentacle Thing
 description: |
-  Because Kinakka has been working on this never-ending tentacle project.
+  Because I have been working on this never-ending tentacle project since I got my first 3d printer.
 maker: Kinnera
 year: 2024
 images:
@@ -14,5 +14,5 @@ images:
     caption: Tentacle 2
   - src: /assets/uploads/TentacleThing1.jpg
     caption: Tentacle 1
-date: 2024-06-01
+date: 2024-09-05
 ---

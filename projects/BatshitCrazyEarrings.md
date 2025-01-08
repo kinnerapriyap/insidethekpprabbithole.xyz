@@ -8,5 +8,5 @@ year: 2024
 images:
   - src: /assets/uploads/BatshitCrazyEarrings.jpg
     caption: BatshitCrazyEarrings
-date: 2024-06-01
+date: 2024-03-02
 ---

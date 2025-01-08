@@ -10,5 +10,5 @@ images:
     caption: World Mappy with Lights
 #   - src: /assets/uploads/WorldMappy2.jpeg
 #     caption: World Mappy without Lights
-date: 2024-03-02
+date: 2024-12-31
 ---
