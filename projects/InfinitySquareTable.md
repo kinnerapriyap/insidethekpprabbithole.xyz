@@ -8,5 +8,5 @@ year: 2024
 images:
   - src: assets/uploads/InfinitySquareTable.jpg
     caption: Infinity Square Table
-date: 202-05-11
+date: 2025-01-16
 ---

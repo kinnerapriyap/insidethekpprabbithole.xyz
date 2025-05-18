@@ -18,7 +18,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^4.0.2",
-    "@netlify/plugin-lighthouse": "^6.0.0",
+    "@netlify/plugin-lighthouse": "^3.0.0",
     "clean-css": "^5.3.3",
     "dotenv": "^16.4.5",
     "eleventy-plugin-helmet": "^0.2.2",
@@ -27,6 +27,7 @@
     "markdown-it": "^14.1.0",
     "netlify-plugin-11ty": "^1.4.0",
     "netlify-plugin-csp-generator": "^1.6.1",
-    "uglify-js": "^3.17.4"
+    "uglify-js": "^3.17.4",
+    "luxon": "^3.6.1"
   }
 }
